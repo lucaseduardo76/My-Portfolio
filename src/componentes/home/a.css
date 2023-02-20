@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: red;
+    height: calc(100vh - 70px);
+}
+
+.img-home img{
+    height: 200px;
+}
+
