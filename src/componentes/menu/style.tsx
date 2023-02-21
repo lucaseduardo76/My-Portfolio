@@ -1,12 +1,12 @@
 import styled from "styled-components";
-
+/*background-color: rgb(1, 9, 43);*/
 export const Container = styled.div`
-    background-color: rgb(1, 9, 43);
+    background-color: #222;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 70px;
-    border-bottom: 0.5px solid #333;
+    height: 85px;
+    border-bottom: 2px solid #444;
 `
 
 export const Logo = styled.div`
@@ -24,7 +24,7 @@ export const Row = styled.li`
 
     &::after{
         content:"";
-        border-top: 2px solid rgb(45, 103, 179);
+        border-top: 2px solid #0098b3;
         margin-top: 3px;  
         display: block;
         transition: .3s ease;
@@ -32,7 +32,7 @@ export const Row = styled.li`
     }
 
     &:hover::after{
-        border-top: 2px solid rgb(45, 103, 179); 
+        border-top: 2px solid #0098b3; 
         margin-top: 3px;  
         transform: scaleX(1);
     }

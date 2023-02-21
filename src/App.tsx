@@ -11,6 +11,8 @@ function App() {
       <Menu />
 
       <Home/>
+
+      <About/>
     </div>
   )
 }

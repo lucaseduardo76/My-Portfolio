@@ -1,32 +1,39 @@
-import img from '../../assets/image/foto.jpg'
-import "./a.css"
+import githubIcon from './images/github.svg'
+import linkedinIcon from './images/linkedin.svg'
+import background from './images/background.webp'
+import * as C from './style'
+
 
 export const Home = () => {
-    return(
-        <div className="container">
-            <div className="left-side">
-                <div className='text-home'>
-                    <h2 className="home-text">OLÁ, EU SOU</h2>
-                    <span className="name">LUCAS EDUARDO</span>
-                    <h2 className="home-text">DESENVOLVEDOR FRONT-END</h2>
-                </div>
+    return (
+        <C.Container >
+            <div>
+                <C.leftSide>
+                    <C.Text>OLÁ, EU SOU</C.Text>
+                    <C.Name>LUCAS EDUARDO</C.Name>
+                    <C.Text>DESENVOLVEDOR FRONT-END</C.Text>
+                </C.leftSide>
 
-                <div className="button-home">
-                    <button>
-                        <img src="#linkedinicon" alt="" />
-                        <span>Linkedin</span>
-                    </button>
+                <C.ContainerButton>
+                    <C.Button>
+                        <C.ButtonLink href="https://www.linkedin.com/in/lucas-eduardo-silva-071417244/" target="_blank">
+                            <img style={{marginTop: '-7px'}} className='linkedin-icon' src={linkedinIcon} alt="" />
+                            <C.ButtonText>Linkedin</C.ButtonText>
+                        </C.ButtonLink>
+                    </C.Button>
 
-                    <button>
-                        <img src="#giticon" alt="" />
-                        <span>Github</span>
-                    </button>
-                </div>
+                    <C.Button>
+                        <C.ButtonLink href="https://github.com/lucaseduardo76" target="_blank">
+                            <img src={githubIcon} alt="" />
+                            <C.ButtonText>Github</C.ButtonText>
+                        </C.ButtonLink>
+                    </C.Button>
+                </C.ContainerButton>
             </div>
 
-            <div className="img-home">
-                <img src={img} alt="" />
+            <div>
+                <C.ImgHome src={background} alt="FOTO" />
             </div>
-        </div>
+        </C.Container>
     )
 }
