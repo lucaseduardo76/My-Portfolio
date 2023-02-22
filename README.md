@@ -6,8 +6,6 @@ Este é um projeto de portfólio pessoal construído com React JS com Typescript
 
 A motivação para construir esse portfólio surgiu a partir da necessidade de ter um lugar centralizado para apresentar meus projetos e experiência profissional. Eu queria ter um lugar que pudesse compartilhar com amigos, recrutadores e potenciais colaboradores.
 
-Além disso, eu queria praticar minhas habilidades em desenvolvimento web e aprender novas tecnologias, como React JS e styled components.
-
 ## Deploy
 
 Você pode ver o meu portfólio online em: https://lucased.netlify.app/
@@ -48,8 +46,6 @@ This is a personal portfolio project built with React JS with Typescript and sty
 
 ## Motivation
 The motivation for building this portfolio came from the need to have a centralized place to showcase my projects and professional experience. I wanted to have a place that I could share with friends, recruiters, and potential collaborators.
-
-Additionally, I wanted to practice my web development skills and learn new technologies, such as React JS and styled components.
 
 ## Deploy
 You can view my portfolio online at: https://lucased.netlify.app/
