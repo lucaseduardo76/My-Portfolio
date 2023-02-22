@@ -1,9 +1,9 @@
-import { Menu } from './componentes/menu'
-import { Home } from './componentes/home'
-import { About } from './componentes/about'
-import { Experience } from './componentes/experience'
-import { Projects } from './componentes/projects'
-import { End } from './componentes/rodape'
+import { Menu } from './componentes/pages/menu'
+import { Home } from './componentes/pages/home'
+import { About } from './componentes/pages/about'
+import { Experience } from './componentes/pages/experience'
+import { Projects } from './componentes/pages/projects'
+import { End } from './componentes/pages/rodape'
 
 function App() {
   return (
@@ -13,6 +13,8 @@ function App() {
       <Home/>
 
       <About/>
+
+      <Experience/>
     </div>
   )
 }
