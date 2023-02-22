@@ -1,4 +1,4 @@
-import './a.css'
+
 import { CertificationList } from './certificados'
 import * as C from './style'
 
