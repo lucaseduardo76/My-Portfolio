@@ -13,6 +13,7 @@ export const Menu = () => {
                     <C.Row><C.Link href="#home">Home</C.Link ></C.Row>
                     <C.Row><C.Link  href="#about">Sobre</C.Link ></C.Row>
                     <C.Row><C.Link  href="#exp">Experiência</C.Link ></C.Row>
+                    <C.Row><C.Link  href="#certificate">Certificado</C.Link ></C.Row>
                     <C.Row><C.Link  href="#project">Projetos</C.Link ></C.Row>
                 </C.List>
             </div>

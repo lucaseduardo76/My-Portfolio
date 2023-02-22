@@ -1,50 +1,57 @@
-.container{
+import styled from "styled-components";
+
+export const Container = styled.div`
     height: auto;
     background-color: #333;
     padding: 60px 0px;
     border-bottom: 2px solid #555;
-}
+`
 
-.box{
+export const SecondContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: space-around;    
     max-width: 70%;
     margin: auto;   
-    color: #fff;
-}
+`
 
-.title{
+export const Title = styled.h2`
     font-weight: 500;
-}
+    color: #fff;
+`
 
-.box-text{
+export const ExpBoxText = styled.div`
     margin-bottom: 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-left: 15px;
-    
-}
+`
 
-.box-text h2{
+export const ExpText = styled.h2`
     font-size: 20px;
     font-weight: 400;
     margin-top: 20px;
-}
-
-.photo-box{
+    color: #fff;
+`
+export const ContainerCertic = styled.div`
     margin-bottom: 40px;
     margin-left: 15px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+`
+
+type Props = {
+    img:string
 }
 
-.img{
+export const CertificateBox = styled.div<Props>`
+    display: flex;
+    align-items: flex-end;      
     max-width: 350px; 
     height: 230px;
-    background: url(./image/typescript.jpg);
+    background: url(${Props => Props.img});
     background-size: cover;
     background-position: center;    
     border: 5px solid #0098b3;
@@ -53,8 +60,13 @@
     cursor: pointer;
     box-shadow:  #0098b3 2px 2px 10px, #fff -2px -2px 10px;
     margin-top: 40px;
-}
-.black{
+    transition: .5s all;
+
+    &:hover{
+        box-shadow:  #0098b3 6px 6px 10px, #fff -6px -6px 10px;
+    }
+`
+export const BlackScreen = styled.div`
     background-color: rgba(0, 0, 0, 0.7);
     height: 50%;
     padding: 8px;
@@ -62,35 +74,19 @@
     display: flex;
     flex-direction: column;
     gap: 6px;
-}
-
-.black-all{
-    background-color: rgba(144, 163, 173,0.3);
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    transition: .5s all;
-}
-
-.black-all:hover{
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.certificados h3{
+    color: #fff;
+`
+export const BlackScreenTitle = styled.h3`
     font-size: 23px;
     font-weight: 400;
-}
+    color: #fff
+`
 
-.black p{
+export const BlackScreenText = styled.p`
     font-size: 14px;
     line-height: 20px;
-    color: #c6d4d6;
-}
-
-.text-end{
+`
+export const FinalTextCertificate = styled.div`
     font-size: 17px;
-}
-
-.text-end span{
-    color: #0098b3;
-}
+    color: #fff;
+`
