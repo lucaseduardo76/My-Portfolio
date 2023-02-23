@@ -39,6 +39,7 @@
     border-left: 5px solid #0098b3;
     cursor: pointer;
     transition: .8s all;
+    border-radius: 25px 25px 0px 0px ;
 }
 .box-projects .foto-site:hover{
     box-shadow:  #0098b3 6px 6px 10px, #fff -6px -6px 10px;
