@@ -1,5 +1,5 @@
-import githubIcon from './images/github.svg'
-import linkedinIcon from './images/linkedin.svg'
+import githubIcon from '../../../assets/icons/github.svg'
+import linkedinIcon from '../../../assets/icons/linkedin.svg'
 import background from './images/background.webp'
 import {Button} from './../../interface/button'
 import * as C from './style'

@@ -2,7 +2,7 @@ import { Menu } from './componentes/pages/menu'
 import { Home } from './componentes/pages/home'
 import { About } from './componentes/pages/about'
 import { Experience } from './componentes/pages/experience'
-import { Projects } from './componentes/pages/projects'
+import { ProjectsContainer } from './componentes/pages/projects'
 import { End } from './componentes/pages/rodape'
 
 function App() {
@@ -15,6 +15,9 @@ function App() {
       <About/>
 
       <Experience/>
+
+      <ProjectsContainer />
+  
     </div>
   )
 }

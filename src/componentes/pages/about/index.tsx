@@ -1,7 +1,7 @@
 import myPhoto from './images/me.png'
-import location from './images/locationIcon.svg'
-import email from './images/emailIcon.svg'
-import download from './images/downloadIcon.svg'
+import location from '../../../assets/icons/locationIcon.svg'
+import email from '../../../assets/icons/emailIcon.svg'
+import download from '../../../assets/icons/downloadIcon.svg'
 import * as C from './styles'
 
 import { Button } from './../../interface/button'
