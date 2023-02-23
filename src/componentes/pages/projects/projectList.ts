@@ -3,6 +3,7 @@ import urna from './images/urna.png'
 import memory from './images/memory.png'
 import imc from './images/imc.png'
 import delivery from './images/delivery.png'
+import clock from './images/clock.png'
 
 export const Projects = () =>{
     const list =[
@@ -46,6 +47,14 @@ export const Projects = () =>{
             deploy: 'https://lucaseduardo76.github.io/Pizza-Delivery/',
             git: 'https://github.com/lucaseduardo76/Pizza-Delivery'
         },
+        {
+            image: clock,
+            title: 'Rlógio analógico',
+            explaining: 'O projeto de relógio analógico tem como objetivo desenvolver minhas habilidades em HTML, CSS e JavaScript, criando uma interface interativa e visualmente atraente.',
+            Technology:'Html, Css e Javascript',
+            deploy: 'https://lucaseduardo76.github.io/Relogio/',
+            git: 'https://github.com/lucaseduardo76/Relogio'
+        }
 
         
     ]
