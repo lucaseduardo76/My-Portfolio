@@ -49,12 +49,13 @@ export const Projects = () =>{
         },
         {
             image: clock,
-            title: 'Rlógio analógico',
+            title: 'Relógio analógico',
             explaining: 'O projeto de relógio analógico tem como objetivo desenvolver minhas habilidades em HTML, CSS e JavaScript, criando uma interface interativa e visualmente atraente.',
             Technology:'Html, Css e Javascript',
             deploy: 'https://lucaseduardo76.github.io/Relogio/',
             git: 'https://github.com/lucaseduardo76/Relogio'
         }
+        
 
         
     ]

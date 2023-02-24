@@ -1,7 +1,7 @@
 import styled from "styled-components";
 /*background-color: rgb(1, 9, 43);*/
 export const Container = styled.div`
-    background-color: #222;
+    background-color: #111;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -17,8 +17,25 @@ export const Logo = styled.div`
 export const List = styled.ul`
     list-style: none;
     display: flex;
+    
+    @media(max-width: 820px){
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        margin-top: 44px;
+        width: 50%;
+        height: calc(100vh - 104px);
+        align-items: flex-end;
+        padding: 10px 30px;
+        font-size: 30px;
+        background-color: #222;
+        z-index: 99;  
+        overflow: hidden;  
+    }
 `
-
+export const BoxMenuList = styled.div`    
+    
+`
 export const Row = styled.li`
     margin: 30px;
 
@@ -36,6 +53,12 @@ export const Row = styled.li`
         margin-top: 3px;  
         transform: scaleX(1);
     }
+
+    @media(max-width: 1030px){
+        margin: 20px;
+    }
+
+    
 `
 
 export const Link = styled.a`
@@ -43,4 +66,14 @@ export const Link = styled.a`
     font-weight: 500;
     text-decoration: none;
     cursor: pointer;
+`
+
+export const MenuMob = styled.div`
+    display: none;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    @media(max-width: 820px){
+        display: block;
+    }
 `

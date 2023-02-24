@@ -11,8 +11,15 @@ export const SecondContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: space-around;    
-    max-width: 70%;
-    margin: auto;   
+    width: 70%;
+    margin: auto;  
+    
+    @media(max-width: 1540px){
+        width: 85%;
+    }
+    @media(max-width: 860px){
+        width: 90%;
+    }
 `
 
 export const Title = styled.h2`
@@ -38,8 +45,12 @@ export const ContainerCertic = styled.div`
     margin-bottom: 40px;
     margin-left: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
     flex-wrap: wrap;
+
+    @media(max-width:725px){
+        justify-content: center;
+    }    
 `
 
 type Props = {
@@ -64,6 +75,10 @@ export const CertificateBox = styled.div<Props>`
 
     &:hover{
         box-shadow:  #0098b3 6px 6px 10px, #fff -6px -6px 10px;
+    }
+
+    @media(max-width: 860px) and (min-width: 725px){
+        width: 300px;
     }
 `
 export const BlackScreen = styled.div`

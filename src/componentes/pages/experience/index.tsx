@@ -25,7 +25,7 @@ const Certificados = (data: Props) => {
 
 export const Experience = () => {
     return (
-        <C.Container className="container">
+        <C.Container>
             <C.SecondContainer>
                 <C.Title>EXPERIÊNCIA</C.Title>
 

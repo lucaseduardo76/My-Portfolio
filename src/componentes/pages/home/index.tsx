@@ -32,9 +32,9 @@ export const Home = () => {
                 </C.ContainerButton>
             </div>
 
-            <div>
+            <C.BoxImg>
                 <C.ImgHome src={background} alt="FOTO" />
-            </div>
+            </C.BoxImg>
         </C.Container>
     )
 }

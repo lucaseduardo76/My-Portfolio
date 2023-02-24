@@ -32,12 +32,25 @@ export const ImgHome = styled.img`
     box-sizing: content-box;
     transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1); 
     will-change: transform;
+
+    @media(max-width: 1000px){
+      height: 380px;
+      width: 380px;
+    }
 `
 
 export const Text = styled.h2`
-    font-size: 27px;
+    font-size: 25px;
     font-weight: 500;
     color: #eee;
+
+    @media(max-width:1000px) and (min-width: 880px){
+      font-size: 23px;
+    }
+    @media(max-width: 400px){
+      font-size: 21px
+    }
+
 `
 
 export const Name = styled.h2`
@@ -50,6 +63,27 @@ export const Name = styled.h2`
         margin-left: 5px;
         border-right: 5px solid #ffffff;
         animation: ${pulse} .6s alternate infinite;
+    }
+
+    @media(max-width:1000px){
+      font-size: 45px;
+    }
+
+    @media(max-width: 880px){
+      font-size: 65px
+    }
+
+    @media(max-width: 600px){
+      font-size: 45px
+    }
+
+    @media(max-width: 400px){
+      font-size: 40px
+    }
+`
+export const BoxImg = styled.div`
+    @media(max-width: 880px){
+      display: none;
     }
 `
 

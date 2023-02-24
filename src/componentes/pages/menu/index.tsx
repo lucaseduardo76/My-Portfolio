@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import * as C from './style'
+import menu from '../../../assets/icons/menu.svg'
 
 export const Menu = () => {
     return (
@@ -8,7 +9,7 @@ export const Menu = () => {
                 <span>L.E</span>
             </C.Logo>
 
-            <div className="list">
+            <C.BoxMenuList>
                 <C.List>
                     <C.Row><C.Link href="#home">Home</C.Link ></C.Row>
                     <C.Row><C.Link  href="#about">Sobre</C.Link ></C.Row>
@@ -16,7 +17,12 @@ export const Menu = () => {
                     <C.Row><C.Link  href="#certificate">Certificado</C.Link ></C.Row>
                     <C.Row><C.Link  href="#project">Projetos</C.Link ></C.Row>
                 </C.List>
-            </div>
+            </C.BoxMenuList>
+
+            <C.MenuMob>
+                <img src={menu} alt="" />
+            </C.MenuMob>
+
         </C.Container>
     )
 }

@@ -2,7 +2,7 @@ import { Button } from "../../interface/button"
 import web from '../../../assets/icons/webIcon.svg'
 import git from '../../../assets/icons/github.svg'
 import {Projects} from './projectList'
-import './a.css'
+import * as C from './style'
 
 type Props = {
     title: string
@@ -15,19 +15,19 @@ type Props = {
 
 const BoxProjects = (data: Props) => {
     return (
-        <div className="box-projects">
+        <C.BoxProject>
             <a href={data.deploy} target='_blank'>
-                <img className="foto-site" src={data.img} alt="" />
+                <C.ProjectImgs src={data.img} alt="" />
             </a>
-            <div className="text-projects">
+            <C.TextProject>
                 <h3>{data.title}</h3>
 
-                <p>{data.explain}</p>
+                <C.Paragraph>{data.explain}</C.Paragraph>
 
                 <span>Tecnologias usadas no projeto: {data.tecnol}.</span>
-            </div>
+            </C.TextProject>
 
-            <div className="links">
+            <C.Links>
             <Button
                     link={data.deploy}
                     photo={web}
@@ -39,8 +39,8 @@ const BoxProjects = (data: Props) => {
                     photo={git}
                     text={'Repositório'}
                 />
-            </div>
-        </div>
+            </C.Links>
+        </C.BoxProject>
     )
 }
 
@@ -48,9 +48,9 @@ export const ProjectsContainer = () => {
 
 
     return (
-        <div className="projects">
-            <h1>PROJETOS</h1>
-            <div className="projects-area">
+        <C.Container>
+            <C.Title>PROJETOS</C.Title>
+            <C.ProjectArea>
                 {
                     Projects().map((item, key)=>(
                         <BoxProjects
@@ -64,7 +64,7 @@ export const ProjectsContainer = () => {
                         />
                     ))
                 }
-            </div>
-        </div>
+            </C.ProjectArea>
+        </C.Container>
     )
 }

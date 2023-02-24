@@ -17,6 +17,8 @@ function App() {
       <Experience/>
 
       <ProjectsContainer />
+
+      <End/>
   
     </div>
   )
