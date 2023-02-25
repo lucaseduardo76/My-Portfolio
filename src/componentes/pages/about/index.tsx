@@ -15,7 +15,7 @@ export const About = () => {
                 </div>
 
                 <C.textSide>
-                    <h2 style={{ fontWeight: '400' }}>SOBRE MIM</h2>
+                    <C.Title>SOBRE MIM</C.Title>
 
                     <div style={{ display: 'flex', gap: '5px' }}>
                         <img src={location} alt="" />

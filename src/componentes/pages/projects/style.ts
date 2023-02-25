@@ -9,6 +9,7 @@ export const Container = styled.div`
     background-color: #222;
     padding-top: 40px;
     border-bottom: 2px solid #555;
+    overflow: hidden;
 `
 
 export const Title = styled.h2`

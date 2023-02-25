@@ -5,13 +5,14 @@ import * as C from './style'
 type Props = {
     img: string,
     title: string,
-    text: string
+    text: string,
+    index: number
 }
 
 const Certificados = (data: Props) => {
 
     return (
-        <C.CertificateBox img={data.img}>
+        <C.CertificateBox img={data.img} index={data.index}>
             <C.BlackScreen>
 
                 <C.BlackScreenTitle>{data.title}</C.BlackScreenTitle>
@@ -39,6 +40,7 @@ export const Experience = () => {
                         CertificationList().map((item, key) => (
                             <Certificados
                                 key={key}
+                                index={key}
                                 img={item.photo}
                                 title={item.title}
                                 text={item.text}

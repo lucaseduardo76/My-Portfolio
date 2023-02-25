@@ -54,7 +54,8 @@ export const ContainerCertic = styled.div`
 `
 
 type Props = {
-    img:string
+    img:string,
+    index: number
 }
 
 export const CertificateBox = styled.div<Props>`
@@ -79,6 +80,11 @@ export const CertificateBox = styled.div<Props>`
 
     @media(max-width: 860px) and (min-width: 725px){
         width: 300px;
+    }
+
+
+    @media(max-width: 725px){
+        
     }
 `
 export const BlackScreen = styled.div`
