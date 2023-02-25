@@ -1,4 +1,4 @@
-
+import arrow from './../../../assets/icons/arrow.svg'
 import { CertificationList } from './certificados'
 import * as C from './style'
 
@@ -49,6 +49,8 @@ export const Experience = () => {
                     }
 
                 </C.ContainerCertic>
+                
+                <C.More>Ver todos <C.ArrowSvg src={arrow} alt="" /> </C.More>
 
                 <C.FinalTextCertificate>Estou disponível para bater um papo, você pode entrar em contato comigo via e-mail: <span style={{color: '#0098b3'}}>ilesds@gmail.com</span></C.FinalTextCertificate>
 

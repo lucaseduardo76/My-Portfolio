@@ -1,4 +1,20 @@
 import styled from "styled-components";
+import { keyframes } from "styled-components";
+
+const pulse = keyframes`
+0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.2;
+  }
+  60% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+`
 
 export const Container = styled.div`
     height: auto;
@@ -42,7 +58,7 @@ export const ExpText = styled.h2`
     color: #fff;
 `
 export const ContainerCertic = styled.div`
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     margin-left: 15px;
     display: flex;
     justify-content: space-between;    
@@ -84,7 +100,7 @@ export const CertificateBox = styled.div<Props>`
 
 
     @media(max-width: 725px){
-        
+        display: ${({ index }) => index >= 3 && "none"};
     }
 `
 export const BlackScreen = styled.div`
@@ -107,6 +123,26 @@ export const BlackScreenText = styled.p`
     font-size: 14px;
     line-height: 20px;
 `
+export const More = styled.div`
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    color: #fff;    
+
+    @media(min-width: 725px){
+        display: none;
+    }
+`
+export const ArrowSvg = styled.img`
+    transform: rotate(90deg);
+    fill: #fff;
+    animation: ${pulse} 3s linear infinite;
+   
+`
+
 export const FinalTextCertificate = styled.div`
     font-size: 17px;
     color: #fff;

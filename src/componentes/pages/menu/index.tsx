@@ -1,8 +1,21 @@
-import styled from "styled-components"
+import { useState } from 'react'
 import * as C from './style'
 import menu from '../../../assets/icons/menu.svg'
 
 export const Menu = () => {
+    const [nav, setNav] = useState('none');
+
+    const ShowNav = () =>{
+        if(nav == 'none'){
+            setNav('flex')
+            console.log('passou aq')
+        }else{
+            setNav('none')
+            console.log('passou aqui 2')
+        }
+    }
+
+
     return (
         <C.Container>
             <C.Logo>
@@ -10,7 +23,7 @@ export const Menu = () => {
             </C.Logo>
 
             <C.BoxMenuList>
-                <C.List>
+                <C.List Valid={nav}>
                     <C.Row><C.Link href="#home">Home</C.Link ></C.Row>
                     <C.Row><C.Link  href="#about">Sobre</C.Link ></C.Row>
                     <C.Row><C.Link  href="#exp">Experiência</C.Link ></C.Row>
@@ -19,7 +32,7 @@ export const Menu = () => {
                 </C.List>
             </C.BoxMenuList>
 
-            <C.MenuMob>
+            <C.MenuMob onClick={ShowNav}>
                 <img src={menu} alt="" />
             </C.MenuMob>
 

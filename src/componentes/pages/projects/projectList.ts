@@ -10,7 +10,7 @@ export const Projects = () =>{
         {
             image: awax,
             title: 'Projeto Awax',
-            explaining: 'O projeto Awax é uma landing page criada para aprimorar minhas habilidades em html, css e javascript, proposta pelo curso da B7WEB.',
+            explaining: 'O projeto Awaw é uma landing page totalente responsiva e interativa ótimo exemplo de site para seu negócio.',
             Technology:'Html, Css e Javascript',
             deploy: 'https://lucaseduardo76.github.io/projetoawax/',
             git: 'https://github.com/lucaseduardo76/projetoawax'
@@ -18,7 +18,7 @@ export const Projects = () =>{
         {
             image: urna,
             title: 'Urna Eletrônica',
-            explaining: 'Aproveitando as eleições de 2022 tive um incentivo para crias um projeto de urna eletronica e praticar minhas habilidades nas tecnolôgias abaixo.',
+            explaining: 'Aproveitando as eleições de 2022 veio a ideia de fazer uma urna eletronica.',
             Technology:'Html, Css e Javascript',
             deploy: 'https://lucaseduardo76.github.io/Urna-Eletronica/',
             git: 'https://github.com/lucaseduardo76/Urna-Eletronica'
@@ -26,7 +26,7 @@ export const Projects = () =>{
         {
             image: memory,
             title: 'Jogo da Memória',
-            explaining: 'Projeto de jogo da memoria construído em React JS, projeto proposto no curso de react da B7WEB.',
+            explaining: 'Jogo clássico da memória, com timer e botão de reset, ótimo para passar o tempo!',
             Technology:'React JS, Html, Css e Javascript',
             deploy: 'https://memorygame-lucas.netlify.app/',
             git: 'https://github.com/lucaseduardo76/Memory-Game'
@@ -34,7 +34,7 @@ export const Projects = () =>{
         {
             image: imc,
             title: 'Calculadora de IMC',
-            explaining: 'A calculadora de IMC é um projeto que visa desenvolver minhas habilidades em HTML, CSS e JavaScript, proposto pelo curso da B7WEB. Ele permite calcular o índice de massa corporal de uma pessoa.',
+            explaining: 'Calculadora de IMC que ajuda a calcular o índice de massa corporal de uma pessoa.',
             Technology:'React JS, Html, Css e Javascript',
             deploy: 'https://imc-lucas.netlify.app/',
             git: 'https://github.com/lucaseduardo76/Calculadora-IMC'
@@ -42,7 +42,7 @@ export const Projects = () =>{
         {
             image: delivery,
             title: 'Delivery de Pizzas',
-            explaining: 'O projeto de delivery de pizza foi proposto pela B7WEB com o objetivo de desenvolver minhas habilidades em HTML, CSS e JavaScript, criando uma plataforma online para pedidos de pizza.',
+            explaining: 'Um projeto pessoal de delivery de pizza com interface totalmente responsiva e de fácil interatividade.',
             Technology:'Html, Css e Javascript',
             deploy: 'https://lucaseduardo76.github.io/Pizza-Delivery/',
             git: 'https://github.com/lucaseduardo76/Pizza-Delivery'
@@ -50,7 +50,7 @@ export const Projects = () =>{
         {
             image: clock,
             title: 'Relógio analógico',
-            explaining: 'O projeto de relógio analógico tem como objetivo desenvolver minhas habilidades em HTML, CSS e JavaScript, criando uma interface interativa e visualmente atraente.',
+            explaining: 'Um relógio analógico que pega a data e hora local da maquina com Javascript.',
             Technology:'Html, Css e Javascript',
             deploy: 'https://lucaseduardo76.github.io/Relogio/',
             git: 'https://github.com/lucaseduardo76/Relogio'

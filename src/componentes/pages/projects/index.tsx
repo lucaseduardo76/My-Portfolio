@@ -1,6 +1,7 @@
 import { Button } from "../../interface/button"
 import web from '../../../assets/icons/webIcon.svg'
 import git from '../../../assets/icons/github.svg'
+import arrow from './../../../assets/icons/arrow.svg'
 import {Projects} from './projectList'
 import * as C from './style'
 
@@ -11,11 +12,12 @@ type Props = {
     explain: string
     deploy: string
     github: string
+    index: number
 }
 
 const BoxProjects = (data: Props) => {
     return (
-        <C.BoxProject>
+        <C.BoxProject index={data.index}>
             <a href={data.deploy} target='_blank'>
                 <C.ProjectImgs src={data.img} alt="" />
             </a>
@@ -55,6 +57,7 @@ export const ProjectsContainer = () => {
                     Projects().map((item, key)=>(
                         <BoxProjects
                             key={key}
+                            index={key}
                             title={item.title}
                             img={item.image}
                             tecnol={item.Technology}
@@ -65,6 +68,9 @@ export const ProjectsContainer = () => {
                     ))
                 }
             </C.ProjectArea>
+
+            <C.More>Ver todos <C.ArrowSvg src={arrow} alt="" /> </C.More>
+
         </C.Container>
     )
 }

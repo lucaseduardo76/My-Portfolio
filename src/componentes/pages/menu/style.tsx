@@ -12,14 +12,18 @@ export const Container = styled.div`
 export const Logo = styled.div`
     color: rgb(146, 146, 223);
     font-weight: 800;
+    
 `
+type Props = {
+    Valid: string
+}
 
-export const List = styled.ul`
+export const List = styled.ul<Props>`
     list-style: none;
     display: flex;
     
-    @media(max-width: 820px){
-        display: none;
+    @media(max-width: 820px){        
+        display: ${({ Valid }) => Valid};
         flex-direction: column;
         position: absolute;
         margin-top: 44px;
