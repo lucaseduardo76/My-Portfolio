@@ -27,7 +27,7 @@ export const List = styled.ul<Props>`
         flex-direction: column;
         position: absolute;
         margin-top: 44px;
-        width: 50%;
+        width: 300px;
         height: calc(100vh - 104px);
         align-items: flex-end;
         padding: 10px 30px;
@@ -35,6 +35,7 @@ export const List = styled.ul<Props>`
         background-color: #222;
         z-index: 99;  
         overflow: hidden;  
+        right: 0;
     }
 `
 export const BoxMenuList = styled.div`    
