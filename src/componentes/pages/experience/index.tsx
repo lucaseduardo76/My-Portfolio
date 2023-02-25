@@ -26,7 +26,7 @@ const Certificados = (data: Props) => {
 
 export const Experience = () => {
     return (
-        <C.Container>
+        <C.Container id='exp'>
             <C.SecondContainer>
                 <C.Title>EXPERIÊNCIA</C.Title>
 
@@ -34,7 +34,7 @@ export const Experience = () => {
                     <C.ExpText>Em busca da minha primira expriência "oficial" !!</C.ExpText>
                 </C.ExpBoxText>
 
-                <C.Title>CERTIFICADOS</C.Title>
+                <C.Title id='certificate'>CERTIFICADOS</C.Title>
                 <C.ContainerCertic>
                     {
                         CertificationList().map((item, key) => (

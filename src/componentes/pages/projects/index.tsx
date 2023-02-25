@@ -50,7 +50,7 @@ export const ProjectsContainer = () => {
 
 
     return (
-        <C.Container>
+        <C.Container id="projects">
             <C.Title>PROJETOS</C.Title>
             <C.ProjectArea>
                 {

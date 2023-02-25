@@ -2,13 +2,16 @@ import myPhoto from './images/me.png'
 import location from '../../../assets/icons/locationIcon.svg'
 import email from '../../../assets/icons/emailIcon.svg'
 import download from '../../../assets/icons/downloadIcon.svg'
+import { useRef } from 'react'
 import * as C from './styles'
 
 import { Button } from './../../interface/button'
 
 export const About = () => {
+    const secaoRef = useRef(null);
+
     return (
-        <C.Container>
+        <C.Container id='about' ref={secaoRef}>
             <C.Box>
                 <div>
                     <C.Profile src={myPhoto} alt="" />
