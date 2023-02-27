@@ -6,16 +6,21 @@ export const Menu = () => {
     const [isNavFlex, setIsNavFlex] = useState('none');
     const minhaSecaoRef = useRef(null);
 
-    
+
 
     useEffect(() => {
-        if(isNavFlex == 'flex'){
-            document.body.style.overflow = 'hidden';
-              
-        }else{
-            document.body.style.overflow = 'auto';
+
+        if (window.screen.width < 820) {
+
+            if (isNavFlex == 'flex') {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+            
         }
-      }, [isNavFlex]);
+
+    }, [isNavFlex]);
 
 
     return (
@@ -26,11 +31,27 @@ export const Menu = () => {
 
             <C.BoxMenuList>
                 <C.List Valid={isNavFlex}>
-                    <C.Row onClick={() => setIsNavFlex(isNavFlex == 'flex' ? 'none' : 'flex')} ><C.Link href="#home">Home</C.Link ></C.Row>
-                    <C.Row onClick={() => setIsNavFlex(isNavFlex == 'flex' ? 'none' : 'flex')} ><C.Link  href="#about">Sobre</C.Link ></C.Row>
-                    <C.Row onClick={() => setIsNavFlex(isNavFlex == 'flex' ? 'none' : 'flex')} ><C.Link  href="#exp">Experiência</C.Link ></C.Row>
-                    <C.Row onClick={() => setIsNavFlex(isNavFlex == 'flex' ? 'none' : 'flex')} ><C.Link  href="#exp">Certificado</C.Link ></C.Row>
-                    <C.Row onClick={() => setIsNavFlex(isNavFlex == 'flex' ? 'none' : 'flex')} ><C.Link  href="#projects">Projetos</C.Link ></C.Row>
+
+                    <C.Row onClick={() => setIsNavFlex(isNavFlex == 'flex' ? 'none' : 'flex')} >
+                        <C.Link href="#home">Home</C.Link >
+                    </C.Row>
+
+                    <C.Row onClick={() => setIsNavFlex(isNavFlex == 'flex' ? 'none' : 'flex')} >
+                        <C.Link href="#about">Sobre</C.Link >
+                    </C.Row>
+
+                    <C.Row onClick={() => setIsNavFlex(isNavFlex == 'flex' ? 'none' : 'flex')} >
+                        <C.Link href="#exp">Experiência</C.Link >
+                    </C.Row>
+
+                    <C.Row onClick={() => setIsNavFlex(isNavFlex == 'flex' ? 'none' : 'flex')} >
+                        <C.Link href="#exp">Certificado</C.Link >
+                    </C.Row>
+
+                    <C.Row onClick={() => setIsNavFlex(isNavFlex == 'flex' ? 'none' : 'flex')} >
+                        <C.Link href="#projects">Projetos</C.Link >
+                    </C.Row>
+
                 </C.List>
             </C.BoxMenuList>
 
