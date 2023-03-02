@@ -26,7 +26,9 @@ export const Menu = () => {
 
             <C.BoxMenuList>
                 <C.List Valid={isNavFlex}>
-                    <C.Row onClick={() => setIsNavFlex(isNavFlex == 'flex' ? 'none' : 'flex')} ><C.Link href="#home">Home</C.Link ></C.Row>
+                    <C.Row onClick={() => setIsNavFlex(isNavFlex == 'flex' ? 'none' : 'flex')} >
+                        <C.Link href="#home">Home</C.Link >
+                    </C.Row>
                     <C.Row onClick={() => setIsNavFlex(isNavFlex == 'flex' ? 'none' : 'flex')} ><C.Link  href="#about">Sobre</C.Link ></C.Row>
                     <C.Row onClick={() => setIsNavFlex(isNavFlex == 'flex' ? 'none' : 'flex')} ><C.Link  href="#exp">Experiência</C.Link ></C.Row>
                     <C.Row onClick={() => setIsNavFlex(isNavFlex == 'flex' ? 'none' : 'flex')} ><C.Link  href="#exp">Certificado</C.Link ></C.Row>
