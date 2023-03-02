@@ -1,38 +1,95 @@
 import { useState, useEffect, useRef } from 'react'
 import * as C from './style'
 import menu from '../../../assets/icons/menu.svg'
+import logo from './images/logo.svg'
+
+type Props = {
+    link: string
+    section: string
+}
+
+const menuList: Props[] = [
+    {
+        link: '#home',
+        section: 'Home'
+    },
+
+    {
+        link: '#about',
+        section: 'Sobre'
+    },
+
+    {
+        link: '#exp',
+        section: 'Experiência'
+    },
+
+    {
+        link: '#exp',
+        section: 'Certificado'
+    },
+
+    {
+        link: '#projects',
+        section: 'Projetos'
+    }
+]
+
+
+
 
 export const Menu = () => {
     const [isNavFlex, setIsNavFlex] = useState('none');
     const minhaSecaoRef = useRef(null);
 
-    
+
 
     useEffect(() => {
-        if(isNavFlex == 'flex'){
-            document.body.style.overflow = 'hidden';
-              
-        }else{
-            document.body.style.overflow = 'auto';
+
+        if (window.screen.width < 820) {
+
+            if (isNavFlex == 'flex') {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+            
         }
-      }, [isNavFlex]);
+
+    }, [isNavFlex]);
+
+    const handleMenuCLick = (e: React.MouseEvent): void =>{
+        setIsNavFlex(isNavFlex == 'flex' ? 'none' : 'flex')
+
+        e.preventDefault()
+        
+        const id: any = e.currentTarget.getAttribute("href");
+        const screenTO = document.querySelector(id);
+
+        window.scrollTo({
+            behavior: 'smooth',
+            top: screenTO.offsetTop
+        })
+    }
 
 
     return (
         <C.Container id='home'>
             <C.Logo>
-                <span>L.E</span>
+                <span><C.LogoImg src={logo} alt="" /></span>
             </C.Logo>
 
             <C.BoxMenuList>
                 <C.List Valid={isNavFlex}>
-                    <C.Row onClick={() => setIsNavFlex(isNavFlex == 'flex' ? 'none' : 'flex')} >
-                        <C.Link href="#home">Home</C.Link >
-                    </C.Row>
-                    <C.Row onClick={() => setIsNavFlex(isNavFlex == 'flex' ? 'none' : 'flex')} ><C.Link  href="#about">Sobre</C.Link ></C.Row>
-                    <C.Row onClick={() => setIsNavFlex(isNavFlex == 'flex' ? 'none' : 'flex')} ><C.Link  href="#exp">Experiência</C.Link ></C.Row>
-                    <C.Row onClick={() => setIsNavFlex(isNavFlex == 'flex' ? 'none' : 'flex')} ><C.Link  href="#exp">Certificado</C.Link ></C.Row>
-                    <C.Row onClick={() => setIsNavFlex(isNavFlex == 'flex' ? 'none' : 'flex')} ><C.Link  href="#projects">Projetos</C.Link ></C.Row>
+
+                    {
+                        menuList.map((item, key) => (
+                            <C.Row key={key}>
+                                <C.Link href={item.link} onClick={handleMenuCLick}>{item.section}</C.Link >
+                            </C.Row>
+                        ))
+                    }
+
                 </C.List>
             </C.BoxMenuList>
 

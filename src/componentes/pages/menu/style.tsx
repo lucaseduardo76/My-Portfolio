@@ -10,10 +10,14 @@ export const Container = styled.div`
 `
 
 export const Logo = styled.div`
-    color: rgb(146, 146, 223);
-    font-weight: 800;
+    margin-top: 3px;
     
 `
+export const LogoImg = styled.img`
+    width: 50px;
+    height: 45px;
+`
+
 type Props = {
     Valid: string
 }
