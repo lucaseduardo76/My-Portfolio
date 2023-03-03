@@ -13,14 +13,16 @@ export const Home = () => {
     
      
     useEffect(() => {
-        const timer = setInterval(() => {
-            setName(name + boxName.charAt(count))
-            console.log(count)
-            if (count < boxName.length) {
-                setCount(count + 1)
-            }
-        }, 150)
-
+        let timer;
+        if(count <= 12){
+            timer = setInterval(() => {
+                setName(name + boxName.charAt(count))
+                console.log(count)
+                if (count < boxName.length) {
+                    setCount(count + 1)
+                }
+            }, 150)
+        }
         return () => clearInterval(timer);
     }, [count])
 
