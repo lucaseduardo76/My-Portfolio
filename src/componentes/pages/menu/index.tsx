@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import * as C from './style'
 import menu from '../../../assets/icons/menu.svg'
+import logo from './images/logo.svg'
 
 type Props = {
     link: string
@@ -33,6 +34,8 @@ const menuList: Props[] = [
         section: 'Projetos'
     }
 ]
+
+
 
 
 export const Menu = () => {
@@ -73,7 +76,7 @@ export const Menu = () => {
     return (
         <C.Container id='home'>
             <C.Logo>
-                <span>L.E</span>
+                <span><C.LogoImg src={logo} alt="" /></span>
             </C.Logo>
 
             <C.BoxMenuList>

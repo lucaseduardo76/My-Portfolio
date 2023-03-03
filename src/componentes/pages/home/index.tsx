@@ -11,7 +11,7 @@ export const Home = () => {
     const [name, setName] = useState('');
     const boxName = 'Lucas Eduardo'
     
-    
+     
     useEffect(() => {
         const timer = setInterval(() => {
             setName(name + boxName.charAt(count))
