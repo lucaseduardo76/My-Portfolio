@@ -1,22 +1,43 @@
 import githubIcon from '../../../assets/icons/github.svg'
 import linkedinIcon from '../../../assets/icons/linkedin.svg'
 import background from './images/background.webp'
-import {Button} from './../../interface/button'
+import { Button } from './../../interface/button'
 import * as C from './style'
+import { useEffect, useState } from 'react'
 
 
 export const Home = () => {
+    const [count, setCount] = useState(0);
+    const [name, setName] = useState('');
+
+    /*const boxName = ['L', 'u', 'c', 'a', 's', ' ', 'E', 'd', 'u', 'a', 'r', 'd', 'o'];*/
+
+    const boxName = 'Lucas Eduardo'
+    let a: string;
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setName(name + boxName.charAt(count))
+
+            if (count < boxName.length) {
+                setCount(count + 1)
+            }
+        }, 150)
+
+        return () => clearInterval(timer);
+    }, [count])
+
+
     return (
         <C.Container >
             <div>
                 <C.leftSide>
                     <C.Text>OLÁ, EU SOU</C.Text>
-                    <C.Name>LUCAS EDUARDO</C.Name>
+                    <C.Name>{name}</C.Name>
                     <C.Text>DESENVOLVEDOR FRONT-END</C.Text>
                 </C.leftSide>
 
                 <C.ContainerButton>
-                   
+
                     <Button
                         link={"https://www.linkedin.com/in/lucas-eduardo-silva-071417244/"}
                         photo={linkedinIcon}
