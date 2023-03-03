@@ -16,7 +16,7 @@ Para instalar e rodar o projeto, você precisa ter o Node.js e o npm instalados 
 
 1° Clone o repositório:
 
-``git clone https://github.com/lucaseduardo76/My-portifolio.git``
+``git clone https://github.com/lucaseduardo76/My-portfolio.git``
 
 2° Entre na pasta do projeto:
 

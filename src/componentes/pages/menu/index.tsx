@@ -15,7 +15,7 @@ const menuList: Props[] = [
 
     {
         link: '#about',
-        section: 'About'
+        section: 'Sobre'
     },
 
     {
