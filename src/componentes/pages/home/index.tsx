@@ -17,7 +17,7 @@ export const Home = () => {
         if(count <= 12){
             timer = setInterval(() => {
                 setName(name + boxName.charAt(count))
-                console.log(count)
+                console.log(count + ' a')
                 if (count < boxName.length) {
                     setCount(count + 1)
                 }
