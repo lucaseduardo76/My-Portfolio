@@ -15,7 +15,7 @@ export const Home = () => {
     useEffect(() => {
         const timer = setInterval(() => {
             setName(name + boxName.charAt(count))
-
+            console.log(count)
             if (count < boxName.length) {
                 setCount(count + 1)
             }
