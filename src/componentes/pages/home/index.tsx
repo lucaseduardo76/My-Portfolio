@@ -9,11 +9,9 @@ import { useEffect, useState } from 'react'
 export const Home = () => {
     const [count, setCount] = useState(0);
     const [name, setName] = useState('');
-
-    /*const boxName = ['L', 'u', 'c', 'a', 's', ' ', 'E', 'd', 'u', 'a', 'r', 'd', 'o'];*/
-
     const boxName = 'Lucas Eduardo'
-    let a: string;
+    
+    
     useEffect(() => {
         const timer = setInterval(() => {
             setName(name + boxName.charAt(count))
