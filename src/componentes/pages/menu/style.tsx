@@ -14,7 +14,11 @@ export const Logo = styled.div`
     
 `
 export const LogoImg = styled.img`
-    height: 60px;
+    height: 50px;
+
+    @media(min-width: 820px){
+        height: 40px;
+    }
 `
 
 type Props = {
