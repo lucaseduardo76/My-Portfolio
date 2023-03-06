@@ -39,7 +39,7 @@ export const About = () => {
                         <Button
                             link={""}
                             photo={download}
-                            text={'Download'}
+                            text={'Download CV'}
                         />
 
                         <Button
