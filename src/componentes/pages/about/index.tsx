@@ -1,6 +1,6 @@
 import myPhoto from './images/me.png'
 import location from '../../../assets/icons/locationIcon.svg'
-import email from '../../../assets/icons/emailIcon.svg'
+import whatsapp from '../../../assets/icons/whatsapp.svg'
 import download from '../../../assets/icons/downloadIcon.svg'
 import { useRef } from 'react'
 import * as C from './styles'
@@ -44,8 +44,8 @@ export const About = () => {
 
                         <Button
                             link={""}
-                            photo={email}
-                            text={'E-mail'}
+                            photo={whatsapp}
+                            text={'Whatsapp'}
                         />
                     </C.ButtonContainer>
                 </C.textSide>
