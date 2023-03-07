@@ -65,6 +65,7 @@ export const ProjectArea = styled.div`
 
 type Props = {
     index: number
+    showall: boolean
 }
 
 export const BoxProject = styled.div<Props>`
@@ -77,7 +78,7 @@ export const BoxProject = styled.div<Props>`
     padding: 5px;
 
     @media(max-width: 830px){
-        display: ${({ index }) => index >= 3 && "none"};
+        ${(Props) => Props.index >= 3 ? Props.showall ?  ` display:${Props.index >= 3 && "flex"};`: `display: ${Props.index >= 3 && "none"};` : ""}
     }
 `
 
@@ -132,8 +133,14 @@ export const More = styled.div`
         display: none;
     }
 `
-export const ArrowSvg = styled.img`
-    transform: rotate(90deg);
-    fill: #fff;
+
+type TopButtonProps = {
+    SeeAllLess: boolean
+}
+
+export const ArrowSvg = styled.img<TopButtonProps>`
+    transform: rotate(${(TopButtonProps) => TopButtonProps.SeeAllLess ? '-90' : '90'}deg);
     animation: ${pulse} 3s linear infinite;
+    transition: 1.2s ease;
+   
 `

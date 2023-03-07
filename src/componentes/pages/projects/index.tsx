@@ -4,6 +4,7 @@ import git from '../../../assets/icons/github.svg'
 import arrow from './../../../assets/icons/arrow.svg'
 import {Projects} from './projectList'
 import * as C from './style'
+import { useState } from "react"
 
 type Props = {
     title: string
@@ -13,11 +14,12 @@ type Props = {
     deploy: string
     github: string
     index: number
+    hiddenProjects: boolean
 }
 
 const BoxProjects = (data: Props) => {
     return (
-        <C.BoxProject index={data.index}>
+        <C.BoxProject index={data.index} showall={data.hiddenProjects} >
             <a href={data.deploy} target='_blank'>
                 <C.ProjectImgs src={data.img} alt="" />
             </a>
@@ -48,6 +50,12 @@ const BoxProjects = (data: Props) => {
 
 export const ProjectsContainer = () => {
 
+    const [showProjects, setShowProjects] = useState<boolean>(false)
+
+    const handleClickSetShowing = () =>{
+        setShowProjects(showProjects ? false : true)
+    }
+
 
     return (
         <C.Container id="projects">
@@ -64,12 +72,15 @@ export const ProjectsContainer = () => {
                             explain={item.explaining}
                             deploy={item.deploy}
                             github={item.git}
+                            hiddenProjects={showProjects} 
                         />
                     ))
                 }
             </C.ProjectArea>
 
-            <C.More>Ver todos <C.ArrowSvg src={arrow} alt="" /> </C.More>
+            <C.More onClick={handleClickSetShowing}>
+                    Ver todos <C.ArrowSvg SeeAllLess={showProjects} src={arrow} alt="" /> 
+            </C.More>
 
         </C.Container>
     )

@@ -145,7 +145,6 @@ type TopButtonProps = {
 
 export const ArrowSvg = styled.img<TopButtonProps>`
     transform: rotate(${(TopButtonProps) => TopButtonProps.SeeAllLess ? '-90' : '90'}deg);
-    fill: #fff;
     animation: ${pulse} 3s linear infinite;
     transition: 1.2s ease;
    
