@@ -31,3 +31,11 @@ export const ButtonLink = styled.a`
 export const ButtonText = styled.span`
     color: #eee;
 `
+type Props = {
+    iconSize: string
+}
+
+export const ImgStyled = styled.img<Props>`
+    height: ${(Props) => Props.iconSize};
+
+`

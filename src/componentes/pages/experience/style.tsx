@@ -72,6 +72,7 @@ export const ContainerCertic = styled.div`
 type Props = {
     img:string,
     index: number
+    showall: boolean
 }
 
 export const CertificateBox = styled.div<Props>`
@@ -100,7 +101,9 @@ export const CertificateBox = styled.div<Props>`
 
 
     @media(max-width: 725px){
-        display: ${({ index }) => index >= 3 && "none"};
+
+        ${(Props) => Props.index >= 3 ? Props.showall ?  ` display:${Props.index >= 3 && "flex"};`: `display: ${Props.index >= 3 && "none"};` : ""}
+    
     }
 `
 export const BlackScreen = styled.div`
@@ -136,10 +139,15 @@ export const More = styled.div`
         display: none;
     }
 `
-export const ArrowSvg = styled.img`
-    transform: rotate(90deg);
+type TopButtonProps = {
+    SeeAllLess: boolean
+}
+
+export const ArrowSvg = styled.img<TopButtonProps>`
+    transform: rotate(${(TopButtonProps) => TopButtonProps.SeeAllLess ? '-90' : '90'}deg);
     fill: #fff;
     animation: ${pulse} 3s linear infinite;
+    transition: 1.2s ease;
    
 `
 

@@ -1,18 +1,27 @@
+import { useState } from 'react'
 import arrow from './../../../assets/icons/arrow.svg'
 import { CertificationList } from './certificados'
 import * as C from './style'
+
 
 type Props = {
     img: string,
     title: string,
     text: string,
     index: number
+    hiddenCertificates:boolean
 }
 
 const Certificados = (data: Props) => {
 
+    
+
     return (
-        <C.CertificateBox img={data.img} index={data.index}>
+        <C.CertificateBox 
+        img={data.img} 
+        index={data.index} 
+        showall={data.hiddenCertificates} 
+        >
             <C.BlackScreen>
 
                 <C.BlackScreenTitle>{data.title}</C.BlackScreenTitle>
@@ -25,6 +34,13 @@ const Certificados = (data: Props) => {
 
 
 export const Experience = () => {
+
+    const [showCertificates, setShowCertificates] = useState<boolean>(false)
+
+    const handleClickSetShowing = () =>{
+        setShowCertificates(showCertificates ? false : true)
+    }
+
     return (
         <C.Container id='exp'>
             <C.SecondContainer>
@@ -44,13 +60,16 @@ export const Experience = () => {
                                 img={item.photo}
                                 title={item.title}
                                 text={item.text}
+                                hiddenCertificates={showCertificates}                                
                             />
                         ))
                     }
 
                 </C.ContainerCertic>
                 
-                <C.More>Ver todos <C.ArrowSvg src={arrow} alt="" /> </C.More>
+                <C.More onClick={handleClickSetShowing}>
+                    Ver todos <C.ArrowSvg SeeAllLess={showCertificates} src={arrow} alt="" /> 
+                 </C.More>
 
                 <C.FinalTextCertificate>Estou disponível para bater um papo, você pode entrar em contato comigo via e-mail: <span style={{color: '#0098b3'}}>ilesds@gmail.com</span></C.FinalTextCertificate>
 

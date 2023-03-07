@@ -37,13 +37,14 @@ export const About = () => {
 
                     <C.ButtonContainer>
                         <Button
-                            link={""}
+                            link={""}                            
                             photo={download}
                             text={'Download CV'}
                         />
 
                         <Button
                             link={""}
+                            size={'34px'}
                             photo={whatsapp}
                             text={'Whatsapp'}
                         />
