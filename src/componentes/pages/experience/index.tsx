@@ -2,6 +2,8 @@ import { useState } from 'react'
 import arrow from './../../../assets/icons/arrow.svg'
 import { CertificationList } from './certificados'
 import * as C from './style'
+import ScrollReveal from 'scrollreveal'
+import { useEffect } from 'react'
 
 
 type Props = {
@@ -14,7 +16,7 @@ type Props = {
 
 const Certificados = (data: Props) => {
 
-
+    
 
     return (
         <C.CertificateBox
@@ -41,12 +43,23 @@ export const Experience = () => {
         setShowCertificates(showCertificates ? false : true)
     }
 
+    useEffect(()=>{        
+        const scrollReveal = ScrollReveal({ reset: true });
+      
+        scrollReveal.reveal('#exp-box', { 
+            duration: 2000,
+            distance: '100px'
+    
+        });
+    
+        }, []);
+
     return (
         <C.Container id='exp'>
 
+        
 
-
-            <C.SecondContainer>
+            <C.SecondContainer id='exp-box'>
                 <C.Title>EXPERIÊNCIA</C.Title>
 
                 <C.ExpBoxText>
@@ -76,7 +89,7 @@ export const Experience = () => {
                     <C.ArrowSvg SeeAllLess={showCertificates} src={arrow} alt="" />
                 </C.More>
 
-                <C.FinalTextCertificate>Estou disponível para bater um papo, você pode entrar em contato comigo via e-mail: <span style={{ color: '#0098b3' }}>ilesds@gmail.com</span></C.FinalTextCertificate>
+                <C.FinalTextCertificate>Estou disponível para bater um papo, você pode entrar em contato comigo via e-mail: <a href='mailto:ilucasesds@gmail.com' style={{ color: '#0098b3',  }}>ilesds@gmail.com</a></C.FinalTextCertificate>
 
             </C.SecondContainer>
 

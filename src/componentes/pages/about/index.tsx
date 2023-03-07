@@ -2,22 +2,43 @@ import myPhoto from './images/me.png'
 import location from '../../../assets/icons/locationIcon.svg'
 import whatsapp from '../../../assets/icons/whatsapp.svg'
 import download from '../../../assets/icons/downloadIcon.svg'
-import { useRef } from 'react'
+import email from '../../../assets/icons/emailIcon.svg'
+import { useEffect, useRef } from 'react'
 import * as C from './styles'
+import ScrollReveal from 'scrollreveal'
+
 
 import { Button } from './../../interface/button'
 
 export const About = () => {
     const secaoRef = useRef(null);
 
+    useEffect(()=>{        
+    const scrollReveal = ScrollReveal({ reset: true });
+    scrollReveal.reveal('.about-me', { 
+        duration: 3000,
+        origin: 'right',
+        distance: '100px'
+
+    });
+
+    scrollReveal.reveal('.photo', { 
+        duration: 3000,
+        origin: 'left',
+        distance: '100px'
+
+    });
+
+    }, []);
+
     return (
         <C.Container id='about' ref={secaoRef}>
-            <C.Box>
-                <div>
+            <C.Box >
+                <div className='photo'>
                     <C.Profile src={myPhoto} alt="" />
                 </div>
 
-                <C.textSide>
+                <C.textSide className='about-me'>
                     <C.Title>SOBRE MIM</C.Title>
 
                     <div style={{ display: 'flex', gap: '5px' }}>
@@ -37,16 +58,16 @@ export const About = () => {
 
                     <C.ButtonContainer>
                         <Button
-                            link={""}                            
-                            photo={download}
-                            text={'Download CV'}
-                        />
-
-                        <Button
-                            link={""}
+                            link={"https://wa.me/73981405275"}
                             size={'34px'}
                             photo={whatsapp}
                             text={'Whatsapp'}
+                        />
+
+                        <Button
+                            link={"mailto:ilucasesds@gmail.com"}
+                            photo={email}
+                            text={'E-mail'}
                         />
                     </C.ButtonContainer>
                 </C.textSide>

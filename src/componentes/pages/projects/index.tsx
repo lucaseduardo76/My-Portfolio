@@ -4,7 +4,8 @@ import git from '../../../assets/icons/github.svg'
 import arrow from './../../../assets/icons/arrow.svg'
 import { Projects } from './projectList'
 import * as C from './style'
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import ScrollReveal from 'scrollreveal'
 
 type Props = {
     title: string
@@ -18,8 +19,30 @@ type Props = {
 }
 
 const BoxProjects = (data: Props) => {
+
+    useEffect(()=>{        
+        const scrollReveal = ScrollReveal({ reset: true });
+      
+        scrollReveal.reveal('#LProjects', { 
+            duration: 2000,
+            origin: 'left',
+            distance: '100px'
+    
+        });
+
+        scrollReveal.reveal('#RProjects', { 
+            duration: 2000,
+            origin: 'right',
+            distance: '100px'
+    
+        });
+    
+        }, []);
+
+        const id = data.index % 2 == 0 ? 'LProjects' : 'RProjects';
+
     return (
-        <C.BoxProject index={data.index} showall={data.hiddenProjects} >
+        <C.BoxProject id={id} index={data.index} showall={data.hiddenProjects} >
             <a href={data.deploy} target='_blank'>
                 <C.ProjectImgs src={data.img} alt="" />
             </a>
@@ -55,6 +78,8 @@ export const ProjectsContainer = () => {
     const handleClickSetShowing = () => {
         setShowProjects(showProjects ? false : true)
     }
+
+   
 
 
     return (
