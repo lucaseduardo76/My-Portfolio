@@ -2,7 +2,7 @@ import { Button } from "../../interface/button"
 import web from '../../../assets/icons/webIcon.svg'
 import git from '../../../assets/icons/github.svg'
 import arrow from './../../../assets/icons/arrow.svg'
-import {Projects} from './projectList'
+import { Projects } from './projectList'
 import * as C from './style'
 import { useState } from "react"
 
@@ -32,7 +32,7 @@ const BoxProjects = (data: Props) => {
             </C.TextProject>
 
             <C.Links>
-            <Button
+                <Button
                     link={data.deploy}
                     photo={web}
                     text={'Deploy'}
@@ -52,7 +52,7 @@ export const ProjectsContainer = () => {
 
     const [showProjects, setShowProjects] = useState<boolean>(false)
 
-    const handleClickSetShowing = () =>{
+    const handleClickSetShowing = () => {
         setShowProjects(showProjects ? false : true)
     }
 
@@ -62,7 +62,7 @@ export const ProjectsContainer = () => {
             <C.Title>PROJETOS</C.Title>
             <C.ProjectArea>
                 {
-                    Projects().map((item, key)=>(
+                    Projects().map((item, key) => (
                         <BoxProjects
                             key={key}
                             index={key}
@@ -72,14 +72,16 @@ export const ProjectsContainer = () => {
                             explain={item.explaining}
                             deploy={item.deploy}
                             github={item.git}
-                            hiddenProjects={showProjects} 
+                            hiddenProjects={showProjects}
                         />
                     ))
                 }
             </C.ProjectArea>
 
             <C.More onClick={handleClickSetShowing}>
-                    Ver todos <C.ArrowSvg SeeAllLess={showProjects} src={arrow} alt="" /> 
+                {showProjects && "Ver menos"}
+                {!showProjects && "Ver tudo"}
+                <C.ArrowSvg SeeAllLess={showProjects} src={arrow} alt="" />
             </C.More>
 
         </C.Container>
