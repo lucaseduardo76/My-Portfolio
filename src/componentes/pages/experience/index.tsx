@@ -47,9 +47,7 @@ export const Experience = () => {
         const scrollReveal = ScrollReveal({ reset: true });
       
         scrollReveal.reveal('#exp-box', { 
-            duration: 2000,
-            distance: '100px'
-    
+            duration: 2000    
         });
     
         }, []);

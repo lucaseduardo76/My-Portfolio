@@ -24,16 +24,12 @@ const BoxProjects = (data: Props) => {
         const scrollReveal = ScrollReveal({ reset: true });
       
         scrollReveal.reveal('#LProjects', { 
-            duration: 2000,
-            origin: 'left',
-            distance: '100px'
+            duration: 2000
     
         });
 
         scrollReveal.reveal('#RProjects', { 
-            duration: 2000,
-            origin: 'right',
-            distance: '100px'
+            duration: 2000
     
         });
     

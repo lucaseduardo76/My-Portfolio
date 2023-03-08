@@ -16,16 +16,14 @@ export const About = () => {
     useEffect(()=>{        
     const scrollReveal = ScrollReveal({ reset: true });
     scrollReveal.reveal('.about-me', { 
-        duration: 3000,
-        origin: 'right',
-        distance: '100px'
+        duration: 3000
+       
 
     });
 
     scrollReveal.reveal('.photo', { 
-        duration: 3000,
-        origin: 'left',
-        distance: '100px'
+        duration: 3000
+       
 
     });
 
