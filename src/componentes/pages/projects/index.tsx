@@ -20,23 +20,18 @@ type Props = {
 
 const BoxProjects = (data: Props) => {
 
+   
     useEffect(()=>{        
         const scrollReveal = ScrollReveal({ reset: true });
       
-        scrollReveal.reveal('#LProjects', { 
-            duration: 2000
-    
-        });
-
-        scrollReveal.reveal('#RProjects', { 
+        scrollReveal.reveal('#Box-Projects', { 
             duration: 2000
     
         });
     
         }, []);
-
-        const id = data.index % 2 == 0 ? 'LProjects' : 'RProjects';
-
+        
+        const id = data.index < 3 ? 'Box-Projects' : 'none';
     return (
         <C.BoxProject id={id} index={data.index} showall={data.hiddenProjects} >
             <a href={data.deploy} target='_blank'>
@@ -76,12 +71,12 @@ export const ProjectsContainer = () => {
     }
 
    
-
+   
 
     return (
         <C.Container id="projects">
             <C.Title>PROJETOS</C.Title>
-            <C.ProjectArea>
+            <C.ProjectArea >
                 {
                     Projects().map((item, key) => (
                         <BoxProjects

@@ -76,9 +76,10 @@ export const BoxProject = styled.div<Props>`
     justify-content: space-between;
     color: #fff;
     padding: 5px;
+   
 
     @media(max-width: 830px){
-        ${(Props) => Props.index >= 3 ? Props.showall ?  ` display:${Props.index >= 3 && "flex"}; opacity: 1;`: `display: ${Props.index >= 3 && "none"};` : ""}
+        ${(Props) => Props.index >= 3 ? Props.showall ?  ` display:${Props.index >= 3 && "flex"}; `: `display: ${Props.index >= 3 && "none"};` : ""}
     }
 `
 
