@@ -25,13 +25,18 @@ const BoxProjects = (data: Props) => {
         const scrollReveal = ScrollReveal({ reset: true });
       
         scrollReveal.reveal('#Box-Projects', { 
-            duration: 2000
-    
-        });
+            duration: 2000    
+        }
+        
+        
+        
+        );
+
+        
     
         }, []);
         
-        const id = data.index < 3 ? 'Box-Projects' : 'none';
+        const id = data.index < 4 ? 'Box-Projects' : 'none';
     return (
         <C.BoxProject id={id} index={data.index} showall={data.hiddenProjects} >
             <a href={data.deploy} target='_blank'>
