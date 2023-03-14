@@ -12,6 +12,7 @@ type Props = {
     text: string,
     index: number
     hiddenCertificates: boolean
+    link: string
 }
 
 const Certificados = (data: Props) => {
@@ -20,6 +21,8 @@ const Certificados = (data: Props) => {
 
     return (
         <C.CertificateBox
+            href={data.link}
+            target='_blank'
             img={data.img}
             index={data.index}
             showall={data.hiddenCertificates}
@@ -75,6 +78,7 @@ export const Experience = () => {
                                 title={item.title}
                                 text={item.text}
                                 hiddenCertificates={showCertificates}
+                                link={item.link}
                             />
                         ))
                     }

@@ -75,7 +75,7 @@ type Props = {
     showall: boolean
 }
 
-export const CertificateBox = styled.div<Props>`
+export const CertificateBox = styled.a<Props>`
     display: flex;
     align-items: flex-end;      
     max-width: 350px; 
@@ -90,6 +90,7 @@ export const CertificateBox = styled.div<Props>`
     box-shadow:  #0098b3 2px 2px 10px, #fff -2px -2px 10px;
     margin-top: 40px;
     transition: .5s all;
+    text-decoration: none;
 
     &:hover{
         box-shadow:  #0098b3 6px 6px 10px, #fff -6px -6px 10px;
