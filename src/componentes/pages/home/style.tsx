@@ -15,6 +15,8 @@ const pulse = keyframes`
     opacity: 0;
   }
 `
+
+
 export const Container = styled.div`
     display: flex;
     justify-content: space-evenly;

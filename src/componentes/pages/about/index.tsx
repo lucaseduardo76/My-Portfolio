@@ -43,7 +43,7 @@ export const About = () => {
                     <C.Text>
                         Há um ano venho me dedicando ao desenvolvimento front-end e tenho habilidades em tecnologias como JavaScript, React JS, TypeScript, Tailwind e CSS, entre outras.
 
-                        Atualmente, estou cursando Análise e Desenvolvimento de Software e buscando minha primeira oportunidade profissional nessa área.
+                        Atualmente, estou cursando Análise e Desenvolvimento de Sistemas no IFBA (Instituto Federal da Bahia) e buscando minha primeira oportunidade profissional nessa área.
 
                         Meu objetivo é contribuir para o sucesso de empresas e organizações, entregando soluções de qualidade e com alto padrão de excelência.
 

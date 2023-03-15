@@ -38,9 +38,9 @@ export const Box = styled.div`
         flex-direction: column;        
     }
 
-    @media(max-width: 550px){
+    @media(max-width: 620px){
         padding-top: 20px;
-        margin-bottom: 55px;
+        margin-bottom: 75px;
     }
 
 `
@@ -67,11 +67,15 @@ export const Title = styled.h2`
 `
 
 export const Text = styled.p`
-    line-height: 22px;
+    line-height: 25px;
     font-size: 17px;
 
     @media(max-width:1140px) and (min-width: 800px){
         font-size: 15px;
+    }
+
+    @media(max-width: 730px){
+        line-height: 22px;
     }
 
     @media(max-width:550px){
@@ -82,6 +86,7 @@ export const Text = styled.p`
 `
 export const ButtonContainer = styled.div`
     display: flex;
+    flex-wrap: wrap;
     gap: 35px;
 `
 

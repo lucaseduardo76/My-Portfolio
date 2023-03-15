@@ -10,7 +10,7 @@ export const Home = () => {
     const [count, setCount] = useState(0);
     const [name, setName] = useState('');
     const boxName = 'Lucas Eduardo'
-    
+  
      
     useEffect(() => {
        
@@ -28,6 +28,8 @@ export const Home = () => {
         
     }, [count])
 
+
+    
 
     return (
         <C.Container >

@@ -1,12 +1,19 @@
 import styled from "styled-components";
-/*background-color: rgb(1, 9, 43);*/
-export const Container = styled.div`
+
+type PropsContainer = {
+    position: string
+}
+
+export const Container = styled.div<PropsContainer>`
     background-color: #111;
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 85px;
     border-bottom: 2px solid #444;
+    position: ${(PropsContainer) => PropsContainer.position };
+    z-index: 99;
+    width: 100%;
 `
 
 export const Logo = styled.div`
