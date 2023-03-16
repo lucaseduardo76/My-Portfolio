@@ -68,7 +68,7 @@ export const Menu = () => {
 
         window.scrollTo({
             behavior: 'smooth',
-            top: screenTO.offsetTop - 70
+            top: screenTO.offsetTop -70
         })
     }
 
