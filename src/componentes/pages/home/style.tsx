@@ -22,8 +22,9 @@ export const Container = styled.div`
     justify-content: space-evenly;
     align-items: center;
     background-color: #333;
-    height: calc(100vh - 85px);
+    height: 100vh;
     border-bottom: 2px solid #555;
+    padding-top: 70px;
 `
 
 export const ImgHome = styled.img`

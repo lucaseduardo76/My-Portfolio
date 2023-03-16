@@ -1,17 +1,14 @@
 import styled from "styled-components";
 
-type PropsContainer = {
-    position: string
-}
 
-export const Container = styled.div<PropsContainer>`
+export const Container = styled.div`
     background-color: #111;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 85px;
+    height: 70px;
     border-bottom: 2px solid #444;
-    position: ${(PropsContainer) => PropsContainer.position };
+    position: fixed;
     z-index: 99;
     width: 100%;
 `

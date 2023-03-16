@@ -40,9 +40,6 @@ const menuList: Props[] = [
 
 export const Menu = () => {
     const [isNavFlex, setIsNavFlex] = useState('none');
-    const [positionMenu, setPositionMenu] = useState('static');
-
-    let ScrollUpDOwn: number = 0;
 
 
 
@@ -60,23 +57,6 @@ export const Menu = () => {
 
     }, [isNavFlex]);
 
-    useEffect(() => {
-        window.addEventListener('scroll', () => {
-           
-
-           if(window.scrollY >= ScrollUpDOwn){
-            setPositionMenu('fixed')
-           }else{
-            setPositionMenu('static')
-           }
-    
-           ScrollUpDOwn = window.scrollY;
-        })
-
-        
-      }, [ScrollUpDOwn])
-
-      
 
     const handleMenuCLick = (e: React.MouseEvent): void =>{
         setIsNavFlex(isNavFlex == 'flex' ? 'none' : 'flex')
@@ -88,13 +68,13 @@ export const Menu = () => {
 
         window.scrollTo({
             behavior: 'smooth',
-            top: screenTO.offsetTop
+            top: screenTO.offsetTop - 70
         })
     }
 
 
     return (
-        <C.Container position={positionMenu}  id='home'>
+        <C.Container   id='home'>
             <C.Logo>
                 <span><C.LogoImg src={logo} alt="" /></span>
             </C.Logo>
