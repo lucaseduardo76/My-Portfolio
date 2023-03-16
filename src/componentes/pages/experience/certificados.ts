@@ -1,7 +1,7 @@
-import typescript from './image/typescript.jpg'
-import javascript from './image/javascript.jpg'
-import htmlcss from './image/htmlcss.jpg'
-import git from './image/git.jpg'
+import typescript from './image/typescript.jpeg'
+import javascript from './image/javascript.jpeg'
+import htmlcss from './image/htmlcss.jpeg'
+import git from './image/git.jpeg'
 
 export const CertificationList = () => {
 
