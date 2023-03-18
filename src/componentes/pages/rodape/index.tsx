@@ -1,8 +1,5 @@
 import * as C from './style'
-export const End = () => {
-
-
-    
+export const End = () => {    
 
     return(
         <C.Container >
