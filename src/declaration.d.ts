@@ -6,4 +6,4 @@ declare module '*.png';
 
 declare module 'scrollreveal';
 
-declare module '.webp';
+declare module '*.webp';
