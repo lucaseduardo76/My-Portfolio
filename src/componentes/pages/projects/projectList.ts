@@ -4,6 +4,7 @@ import memory from './images/memory.png'
 import imc from './images/imc.png'
 import delivery from './images/delivery.png'
 import clock from './images/clock.png'
+import pokemon from './images/pokemon.png'
 
 export const Projects = () =>{
     const list =[
@@ -54,6 +55,14 @@ export const Projects = () =>{
             Technology:'Html, Css e Javascript',
             deploy: 'https://lucaseduardo76.github.io/Relogio/',
             git: 'https://github.com/lucaseduardo76/Relogio'
+        },
+        {
+            image: pokemon,
+            title: 'Pokedéx (EM DESENVOLVIMENTO)',
+            explaining: 'Uma pokedex responsiva e interativa, consumindo a API da pokeAPI',
+            Technology:'React JS, Styled-components, Axios, Html, Css e Javascript',
+            deploy: 'https://pokemondex-reactt.netlify.app/',
+            git: 'https://github.com/lucaseduardo76/Pokedex'
         }
         
 
