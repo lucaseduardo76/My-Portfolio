@@ -145,3 +145,7 @@ export const ArrowSvg = styled.img<TopButtonProps>`
     transition: 1.2s ease;
    
 `
+
+export const Tecs = styled.span`
+    color: #0098b3;
+`
