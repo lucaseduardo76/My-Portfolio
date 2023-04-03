@@ -47,7 +47,7 @@ const BoxProjects = (data: Props) => {
 
                 <C.Paragraph>{data.explain}</C.Paragraph>
 
-                <span>Tecnologias usadas no projeto: {data.tecnol}.</span>
+                <span>Tecnologias usadas no projeto: <C.Tecs>{data.tecnol}</C.Tecs>.</span>
             </C.TextProject>
 
             <C.Links>
