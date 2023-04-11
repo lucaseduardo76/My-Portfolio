@@ -60,7 +60,7 @@ export const Projects = () =>{
             image: pokemon,
             title: 'Pokedéx (EM DESENVOLVIMENTO)',
             explaining: 'Uma pokedex responsiva e interativa, consumindo a API da pokeAPI',
-            Technology:'React JS, Styled-components, Axios, Html, Css e Javascript',
+            Technology:'React JS, Styled-components, Html, Css e Javascript',
             deploy: 'https://pokemondex-reactt.netlify.app/',
             git: 'https://github.com/lucaseduardo76/Pokedex'
         }
