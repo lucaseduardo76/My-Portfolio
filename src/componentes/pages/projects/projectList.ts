@@ -17,6 +17,14 @@ export const Projects = () =>{
             git: 'https://github.com/lucaseduardo76/projetoawax'
         },
         {
+            image: pokemon,
+            title: 'Pokedéx',
+            explaining: 'Uma pokedex responsiva e interativa, consumindo a API da pokeAPI',
+            Technology:'React JS, Axios, Styled-components, Html, Css e Javascript',
+            deploy: 'https://pokemondex-reactt.netlify.app/',
+            git: 'https://github.com/lucaseduardo76/Pokedex'
+        },
+        {
             image: urna,
             title: 'Urna Eletrônica',
             explaining: 'Aproveitando as eleições de 2022 veio a ideia de fazer uma urna eletronica.',
@@ -55,14 +63,6 @@ export const Projects = () =>{
             Technology:'Html, Css e Javascript',
             deploy: 'https://lucaseduardo76.github.io/Relogio/',
             git: 'https://github.com/lucaseduardo76/Relogio'
-        },
-        {
-            image: pokemon,
-            title: 'Pokedéx (EM DESENVOLVIMENTO)',
-            explaining: 'Uma pokedex responsiva e interativa, consumindo a API da pokeAPI',
-            Technology:'React JS, Styled-components, Html, Css e Javascript',
-            deploy: 'https://pokemondex-reactt.netlify.app/',
-            git: 'https://github.com/lucaseduardo76/Pokedex'
         }
         
 
