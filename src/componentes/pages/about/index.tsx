@@ -1,7 +1,6 @@
 import myPhoto from './images/me.png'
 import location from '../../../assets/icons/locationIcon.svg'
 import whatsapp from '../../../assets/icons/whatsapp.svg'
-import download from '../../../assets/icons/downloadIcon.svg'
 import email from '../../../assets/icons/emailIcon.svg'
 import { useEffect, useRef } from 'react'
 import * as C from './styles'
