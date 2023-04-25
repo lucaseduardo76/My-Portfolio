@@ -1,10 +1,11 @@
 import myPhoto from './images/me.png'
 import location from '../../../assets/icons/locationIcon.svg'
 import whatsapp from '../../../assets/icons/whatsapp.svg'
-import email from '../../../assets/icons/emailIcon.svg'
+import download from '../../../assets/icons/downloadIcon.svg'
 import { useEffect, useRef } from 'react'
 import * as C from './styles'
 import ScrollReveal from 'scrollreveal'
+import cv from './cv.pdf'
 
 
 import { Button } from './../../interface/button'
@@ -58,9 +59,9 @@ export const About = () => {
                         />
 
                         <Button
-                            link={"mailto:ilucasesds@gmail.com"}
-                            photo={email}
-                            text={'E-mail'}
+                            link={cv}
+                            photo={download}
+                            text={'Download CV'}
                         />
                     </C.ButtonContainer>
                 </C.textSide>
