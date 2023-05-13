@@ -7,9 +7,6 @@ import { End } from './componentes/pages/rodape'
 
 function App() {
 
-
-
-
   return (
 
     <div className="site">
