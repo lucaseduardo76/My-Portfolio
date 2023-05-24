@@ -42,7 +42,7 @@ export const CertificationList = () => {
         {
             photo: english,
             title: 'Inglês',
-            text: 'Conclusão do 4° semestre do curso de inglês da Fisk.',
+            text: 'Conclusão do 4º semestre do curso de inglês da Fisk.',
             link: 'https://sgfapps.fisk.com.br:156/birt/preview?__report=report/aluno/r_aluno_certificado_1A_model.rptdesign&__format=pdf&__locale=en_US&pCdPessoa=525725&pCdEstagio=137' 
         }
         
