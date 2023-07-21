@@ -64,7 +64,7 @@ export const Experience = () => {
                 <C.Title>EXPERIÊNCIA</C.Title>
 
                 <C.ExpBoxText>
-                    <C.ExpText>Em busca da minha primeira expriência !!</C.ExpText>
+                    <C.ExpText>Em busca da minha primeira experiência !!</C.ExpText>
                 </C.ExpBoxText>
 
                 <C.Title id='certificate'>CERTIFICADOS</C.Title>
