@@ -129,6 +129,7 @@ export const More = styled.div`
     gap: 20px;
     font-size: 20px;
     color: #fff;   
+    cursor: pointer;
 
     @media(min-width: 830px){
         display: none;
