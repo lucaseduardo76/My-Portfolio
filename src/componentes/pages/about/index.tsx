@@ -41,7 +41,7 @@ export const About = () => {
                     </div>
 
                     <C.Text>
-                        Há um ano venho me dedicando ao desenvolvimento front-end e tenho habilidades em tecnologias como JavaScript, React JS, TypeScript, Tailwind e CSS, entre outras.
+                        Há um ano venho me dedicando a essa área do desenvolvimento full-stack e tenho habilidades em tecnologias como PHP, MysSql, JavaScript, React JS, TypeScript, Tailwind e CSS, entre outras.
 
                         Atualmente, estou cursando Análise e Desenvolvimento de Sistemas no IFBA (Instituto Federal da Bahia) e buscando minha primeira oportunidade profissional nessa área.
 
