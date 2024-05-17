@@ -5,9 +5,27 @@ import imc from './images/imc.png'
 import delivery from './images/delivery.png'
 import clock from './images/clock.png'
 import pokemon from './images/pokemon.png'
+import cdr from './images/cdr.png'
+import sisger from './images/sisger.png'
 
 export const Projects = () =>{
     const list =[
+        {
+            image: sisger,
+            title: 'LRI Sisger',
+            explaining: 'O sisger é um sistema de gerenciamento de equipes, esse foi o resultado de um projeto integrador do IFBA - Eunápolis',
+            Technology:'PHP, HTML, CSS, Javascript e XML',
+            deploy: 'https://github.com/lucaseduardo76/LRISisger',
+            git: 'https://github.com/lucaseduardo76/LRISisger'
+        },
+        {
+            image: cdr,
+            title: 'Formulários CDR',
+            explaining: 'Esse foi um trabalho feito para uma clinica da minha cidade, sistema de formulario, com salvamento de pdf automático no servidor',
+            Technology:'Node JS, JavaScript',
+            deploy: 'https://github.com/lucaseduardo76/cdr-tools',
+            git: 'https://github.com/lucaseduardo76/cdr-tools'
+        },
         {
             image: awax,
             title: 'Projeto Awax',

@@ -5,7 +5,7 @@ import download from '../../../assets/icons/downloadIcon.svg'
 import { useEffect, useRef } from 'react'
 import * as C from './styles'
 import ScrollReveal from 'scrollreveal'
-import cv from './cv.pdf'
+import cv from './Lucas Eduardo.pdf'
 
 
 import { Button } from './../../interface/button'

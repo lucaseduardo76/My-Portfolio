@@ -26,15 +26,8 @@ const BoxProjects = (data: Props) => {
       
         scrollReveal.reveal('#Box-Projects', { 
             duration: 2000    
-        }
-        
-        
-        
-        );
-
-        
-    
-        }, []);
+        });
+    }, []);
         
         const id = data.index < 4 ? 'Box-Projects' : 'none';
     return (
