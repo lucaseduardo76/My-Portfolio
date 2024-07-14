@@ -22,7 +22,7 @@ Para instalar e rodar o projeto, você precisa ter o Node.js e o npm instalados 
 
 ``cd My-portfolio``
 
-3° Instale as dependências:
+3° Instale as dependências
 
 ``npm install``
 
