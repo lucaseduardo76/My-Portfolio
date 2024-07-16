@@ -1,4 +1,4 @@
-## Portifólio
+## Portifolio
 
 Este é um projeto de portfólio pessoal construído com React JS com Typescript e styled components para estilização. O objetivo desse portfólio é demonstrar minhas habilidades de desenvolvimento de software e servir como um showcase para meus projetos.
 
