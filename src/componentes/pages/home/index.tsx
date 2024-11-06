@@ -37,7 +37,7 @@ export const Home = () => {
                 <C.leftSide>
                     <C.Text>OLÁ, EU SOU</C.Text>
                     <C.Name>{name}</C.Name>
-                    <C.Text>DESENVOLVEDOR FULL-STACK</C.Text>
+                    <C.Text>DESENVOLVEDOR BACK-END</C.Text>
                 </C.leftSide>
 
                 <C.ContainerButton>
